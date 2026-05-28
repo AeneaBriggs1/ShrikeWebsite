@@ -500,7 +500,7 @@ section { width: 100%; }
 
 .about-photo {
   display: block;
-  width: 100%;
+  width: 60%;
   margin-top: 1.25rem;
   margin-bottom: 0;
   aspect-ratio: 4 / 5;
