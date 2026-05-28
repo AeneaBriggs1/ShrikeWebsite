@@ -13,11 +13,14 @@
 
 <nav>
   <a href="index.html" class="nav-logo">Shrike Research Advisory</a>
-  <ul class="nav-links">
+  <ul class="nav-links" id="nav-links">
     <li><a href="services.html">Services</a></li>
     <li><a href="clients.html" class="active">Who We Work With</a></li>
     <li><a href="about.html">About</a></li>
   </ul>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
 </nav>
 
 <header class="hero hero--slim">
@@ -56,6 +59,14 @@
   <span class="footer-brand">Shrike Research Advisory Inc.</span>
   <span class="footer-copy">&copy; 2026 &nbsp;·&nbsp; All rights reserved</span>
 </footer>
-
+<script>
+  var btn = document.getElementById('nav-hamburger');
+  var links = document.getElementById('nav-links');
+  btn.addEventListener('click', function() {
+    var open = links.classList.toggle('nav-open');
+    btn.setAttribute('aria-expanded', open);
+    btn.classList.toggle('is-open', open);
+  });
+</script>
 </body>
 </html>
