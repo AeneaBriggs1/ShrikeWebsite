@@ -48,25 +48,59 @@
       <div class="service-card">
         <div class="service-number">03</div>
         <h3 class="service-title">Applied Research</h3>
-        <p class="service-desc">Hands-on research across several interconnected domains, bringing both theoretical rigor and practical product experience to each:</p>
+        <p class="service-desc">Hands-on research across several interconnected domains, bringing both theoretical rigor and practical product experience to each. Click any area to learn more.</p>
+
         <div class="sub-research">
+
           <div class="sub-item">
-            <div class="sub-item-badge">Active Project</div>
-            <div class="sub-item-title">Quantum Formalism for Cognition, Language &amp; AI (with IAQC)</div>
-            <p class="sub-item-desc">Applying quantum mathematical formalism to model ambiguity, perception, and meaning in ways classical probability cannot capture — with implications for world models, grounded language learning, and creative AI systems.</p>
+            <button class="sub-item-trigger" aria-expanded="false">
+              <span class="sub-item-trigger-left">
+                <span class="sub-item-badge">Active Project</span>
+                <span class="sub-item-title">Quantum Formalism for Cognition, Language &amp; AI</span>
+              </span>
+              <span class="sub-item-chevron" aria-hidden="true">+</span>
+            </button>
+            <div class="sub-item-body" hidden>
+              <p class="sub-item-desc">Applying quantum mathematical formalism to model ambiguity, perception, and meaning in ways classical probability cannot capture — with implications for world models, grounded language learning, and creative AI systems. Active collaboration with IAQC.</p>
+            </div>
           </div>
+
           <div class="sub-item">
-            <div class="sub-item-title">Data Privacy &amp; Privacy-Preserving Analytics</div>
-            <p class="sub-item-desc">Design and evaluation of differential privacy, synthetic data, k-anonymity, and secure multi-party computation systems.</p>
+            <button class="sub-item-trigger" aria-expanded="false">
+              <span class="sub-item-trigger-left">
+                <span class="sub-item-title">Data Privacy &amp; Privacy-Preserving Analytics</span>
+              </span>
+              <span class="sub-item-chevron" aria-hidden="true">+</span>
+            </button>
+            <div class="sub-item-body" hidden>
+              <p class="sub-item-desc">Design and evaluation of differential privacy, synthetic data, k-anonymity, and secure multi-party computation systems for organizations handling sensitive data or building privacy-safe ML pipelines.</p>
+            </div>
           </div>
+
           <div class="sub-item">
-            <div class="sub-item-title">Synthetic Data &amp; Data Quality</div>
-            <p class="sub-item-desc">Research and prototyping in synthetic tabular data generation, including evaluation frameworks for fidelity, utility, and appropriate use cases.</p>
+            <button class="sub-item-trigger" aria-expanded="false">
+              <span class="sub-item-trigger-left">
+                <span class="sub-item-title">Synthetic Data &amp; Data Quality</span>
+              </span>
+              <span class="sub-item-chevron" aria-hidden="true">+</span>
+            </button>
+            <div class="sub-item-body" hidden>
+              <p class="sub-item-desc">Research and prototyping in synthetic tabular data generation, including evaluation frameworks for fidelity, utility, and when synthetic data is — and isn't — an appropriate substitute.</p>
+            </div>
           </div>
+
           <div class="sub-item">
-            <div class="sub-item-title">Numerical &amp; Simulation Modeling</div>
-            <p class="sub-item-desc">Design and implementation of numerical models integrating diverse data sources, with depth in hydrodynamic simulation and large-scale scientific computation.</p>
+            <button class="sub-item-trigger" aria-expanded="false">
+              <span class="sub-item-trigger-left">
+                <span class="sub-item-title">Numerical &amp; Simulation Modeling</span>
+              </span>
+              <span class="sub-item-chevron" aria-hidden="true">+</span>
+            </button>
+            <div class="sub-item-body" hidden>
+              <p class="sub-item-desc">Design and implementation of numerical models integrating diverse data sources, with depth in hydrodynamic simulation and large-scale scientific computation for engineering and environmental applications.</p>
+            </div>
           </div>
+
         </div>
       </div>
 
@@ -82,8 +116,27 @@
 
 <footer>
   <span class="footer-brand">Shrike Research Advisory Inc.</span>
-  <span class="footer-copy">&copy; 2025 &nbsp;·&nbsp; All rights reserved</span>
+  <span class="footer-copy">&copy; 2026 &nbsp;·&nbsp; All rights reserved</span>
 </footer>
+
+<script>
+  document.querySelectorAll('.sub-item-trigger').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var expanded = this.getAttribute('aria-expanded') === 'true';
+      var body = this.nextElementSibling;
+      var chevron = this.querySelector('.sub-item-chevron');
+
+      this.setAttribute('aria-expanded', !expanded);
+      if (expanded) {
+        body.hidden = true;
+        chevron.textContent = '+';
+      } else {
+        body.hidden = false;
+        chevron.textContent = '×';
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
