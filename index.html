@@ -11,17 +11,15 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <a href="index.html" class="nav-logo">Shrike Research Advisory</a>
   <ul class="nav-links">
-    <li><a href="#services">Services</a></li>
-    <li><a href="#clients">Who We Work With</a></li>
-    <li><a href="#about">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="clients.html">Who We Work With</a></li>
+    <li><a href="about.html">About</a></li>
   </ul>
 </nav>
 
-<!-- HERO -->
 <header class="hero">
   <div class="hero-text">
     <p class="hero-eyebrow">Independent Research Consultancy</p>
@@ -29,7 +27,7 @@
     <p class="hero-tagline">Where scientific precision meets the messy reality of building things that matter.</p>
   </div>
   <div class="hero-image-panel">
-    <!-- Replace the SVG below with <img src="images/hero.jpg" alt="..."> when you have a photo -->
+    <!-- Replace SVG with <img src="images/hero.jpg" alt="..."> when you have a photo -->
     <div class="hero-geo">
       <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
         <polygon points="100,10 190,55 190,145 100,190 10,145 10,55" stroke="white" stroke-width="1.5" fill="none"/>
@@ -46,116 +44,36 @@
   </div>
 </header>
 
-<!-- SERVICES -->
-<section id="services">
+<!-- HOMEPAGE PREVIEW CARDS -->
+<section style="background: var(--cream-dark);">
   <div class="section-inner">
-    <p class="section-label section-label--light">What We Do</p>
-    <h2 class="section-heading section-heading--light" style="margin-bottom:3.5rem; max-width:600px;">Senior research leadership &amp; <em>applied expertise</em></h2>
+    <div class="home-cards">
 
-    <div class="services-grid">
+      <a href="services.html" class="home-card">
+        <div class="home-card-number">01–04</div>
+        <h2 class="home-card-title">Services</h2>
+        <p class="home-card-desc">Fractional research leadership, roadmap development, applied research, and technical translation.</p>
+        <span class="home-card-link">View services →</span>
+      </a>
 
-      <div class="service-card">
-        <div class="service-number">01</div>
-        <h3 class="service-title">Fractional Director of Research</h3>
-        <p class="service-desc">Senior research leadership without a full-time hire. Monica embeds with your team to set research direction, mentor scientists and engineers, prioritize workstreams, and serve as the scientific voice in product and strategy conversations. Particularly suited to early-stage AI, data infrastructure, and privacy-tech companies navigating the gap between research and product.</p>
-      </div>
+      <a href="clients.html" class="home-card">
+        <div class="home-card-number">Who</div>
+        <h2 class="home-card-title">Who We Work With</h2>
+        <p class="home-card-desc">Early-stage AI companies, enterprise data teams, academic research groups, and engineering firms.</p>
+        <span class="home-card-link">Learn more →</span>
+      </a>
 
-      <div class="service-card">
-        <div class="service-number">02</div>
-        <h3 class="service-title">Research Roadmap Development</h3>
-        <p class="service-desc">Translating scientific uncertainty into structured, executable plans. This includes scoping research questions, identifying methodological approaches, sequencing work against business or publication timelines, and defining what "done" looks like. Grounded in experience taking research from whiteboard to shipped product at Snowflake and CryptoNumerics.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="service-number">03</div>
-        <h3 class="service-title">Applied Research</h3>
-        <p class="service-desc">Hands-on research across several interconnected domains, bringing both theoretical rigor and practical product experience to each:</p>
-        <div class="sub-research">
-          <div class="sub-item">
-            <div class="sub-item-badge">Active Project</div>
-            <div class="sub-item-title">Quantum Formalism for Cognition, Language &amp; AI (with IAQC)</div>
-            <p class="sub-item-desc">Applying quantum mathematical formalism to model ambiguity, perception, and meaning in ways classical probability cannot capture — with implications for world models, grounded language learning, and creative AI systems.</p>
-          </div>
-          <div class="sub-item">
-            <div class="sub-item-title">Data Privacy &amp; Privacy-Preserving Analytics</div>
-            <p class="sub-item-desc">Design and evaluation of differential privacy, synthetic data, k-anonymity, and secure multi-party computation systems.</p>
-          </div>
-          <div class="sub-item">
-            <div class="sub-item-title">Synthetic Data &amp; Data Quality</div>
-            <p class="sub-item-desc">Research and prototyping in synthetic tabular data generation, including evaluation frameworks for fidelity, utility, and appropriate use cases.</p>
-          </div>
-          <div class="sub-item">
-            <div class="sub-item-title">Numerical &amp; Simulation Modeling</div>
-            <p class="sub-item-desc">Design and implementation of numerical models integrating diverse data sources, with depth in hydrodynamic simulation and large-scale scientific computation.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="service-card">
-        <div class="service-number">04</div>
-        <h3 class="service-title">Requirements Definition &amp; Technical Translation</h3>
-        <p class="service-desc">Bridging the gap between domain experts, data teams, and engineering. Monica has extensive experience turning unclear client problem statements into precise technical requirements — and translating complex research concepts back into product-aligned specifications. Available as a standalone engagement for organizations struggling with misalignment between what scientists produce and what engineers can build.</p>
-      </div>
+      <a href="about.html" class="home-card">
+        <div class="home-card-number">About</div>
+        <h2 class="home-card-title">Who We Are</h2>
+        <p class="home-card-desc">An independent consultancy led by Monica J. Holboke, Ph.D. — scientist, entrepreneur, and former co-founder.</p>
+        <span class="home-card-link">Our story →</span>
+      </a>
 
     </div>
   </div>
 </section>
 
-<!-- WHO WE WORK WITH -->
-<section id="clients">
-  <div class="section-inner">
-    <p class="section-label">Who We Work With</p>
-    <h2 class="section-heading">Organizations where research<br>rigor creates real leverage</h2>
-
-    <div class="clients-grid">
-      <div class="client-card">
-        <h3 class="client-card-title">Early-Stage AI &amp; Data Companies</h3>
-        <p class="client-card-desc">Needing fractional research leadership to build credibly and move strategically from research to product.</p>
-      </div>
-      <div class="client-card">
-        <h3 class="client-card-title">Enterprise Data Teams</h3>
-        <p class="client-card-desc">Evaluating privacy-preserving technologies and synthetic data approaches for sensitive or regulated data environments.</p>
-      </div>
-      <div class="client-card">
-        <h3 class="client-card-title">Academic &amp; Industry Research Groups</h3>
-        <p class="client-card-desc">Working at the intersection of cognition, AI, and formal methods who benefit from bridging theory with applied product experience.</p>
-      </div>
-      <div class="client-card">
-        <h3 class="client-card-title">Engineering &amp; Consulting Firms</h3>
-        <p class="client-card-desc">Requiring simulation and numerical modeling expertise for engineering and environmental applications.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHO WE ARE -->
-<section id="about">
-  <div class="section-inner">
-    <p class="section-label">Who We Are</p>
-    <div class="about-layout">
-      <div class="about-sidebar">
-        <h2 class="about-name">Monica J.<br>Holboke, Ph.D.</h2>
-        <p class="about-title">Founder &amp; Principal</p>
-        <div class="rule"></div>
-        <div class="expertise-tags">
-          <span class="tag">Data Privacy</span>
-          <span class="tag">Applied Mathematics</span>
-          <span class="tag">Numerical Modeling</span>
-          <span class="tag">AI &amp; Cognition</span>
-          <span class="tag">Quantum Formalism</span>
-          <span class="tag">Synthetic Data</span>
-        </div>
-      </div>
-      <div class="about-body">
-        <p>Shrike Research Advisory is an independent research consultancy led by <strong>Monica J. Holboke, Ph.D.</strong> — a scientist, entrepreneur, and former co-founder with deep expertise spanning data privacy, applied mathematics, numerical modeling, and emerging frameworks at the intersection of cognition, language, and AI.</p>
-        <p>With a career bridging academic research, enterprise software, and company-building — including a successful acquisition by Snowflake — Shrike brings rigorous scientific thinking to complex, ambiguous problems.</p>
-        <p>We operate at the edge where formal methods meet practical constraints: where a theorem needs to become a product, where a dataset carries privacy obligations, where a client's vague problem needs to become a precise specification that engineers can actually build.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
 <footer>
   <span class="footer-brand">Shrike Research Advisory Inc.</span>
   <span class="footer-copy">&copy; 2025 &nbsp;·&nbsp; All rights reserved</span>
