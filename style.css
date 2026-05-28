@@ -289,7 +289,7 @@ section { width: 100%; }
   font-family: var(--serif);
   font-size: 2rem;
   font-weight: 300;
-  color: rgba(224,234,228,0.2);
+  color: rgba(224,234,228,0.5);
   line-height: 1;
   margin-bottom: 1rem;
 }
