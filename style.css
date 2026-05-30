@@ -150,11 +150,18 @@ nav {
   background: var(--ink-mid);
 }
 
+.hero-image-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero-image-panel img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.6;
+  width: 55%;
+  max-width: 280px;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.15;
 }
 
 .hero-image-panel::before {
