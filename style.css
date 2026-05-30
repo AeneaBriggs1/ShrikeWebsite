@@ -161,7 +161,8 @@ nav {
   max-width: 280px;
   height: auto;
   object-fit: contain;
-  opacity: 0.15;
+  opacity: 0.35;
+  mix-blend-mode: screen;
 }
 
 .hero-image-panel::before {
